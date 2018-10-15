@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notre-Dame de Paris</title>
+    <link>https://example.com/</link>
+    <description>Recent content on Notre-Dame de Paris</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Oct 2018 16:11:53 +1100</lastBuildDate>
+    
+	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second</title>
+      <link>https://example.com/posts/second/</link>
+      <pubDate>Mon, 15 Oct 2018 16:11:53 +1100</pubDate>
+      
+      <guid>https://example.com/posts/second/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New</title>
+      <link>https://example.com/posts/new/</link>
+      <pubDate>Mon, 15 Oct 2018 15:48:35 +1100</pubDate>
+      
+      <guid>https://example.com/posts/new/</guid>
+      <description>I&amp;rsquo;d rather laugh with the sinners, Than cry with the saints, The sinners are much more fun! &amp;ndash; Billy Joel, &amp;ldquo;Only The Good Die Young&amp;rdquo;</description>
+    </item>
+    
+  </channel>
+</rss>
