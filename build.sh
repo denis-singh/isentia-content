@@ -8,7 +8,7 @@ if [ "$1" == "dev" ]; then
         cd -
         git config --global user.email "gitlab-ci@test.com"
  	git config --global user.name "gitlab-ci"
-        git commit -am "Updated content for dev - ${CI_JOB_ID}"
+        git commit -am "Updated content for dev ${CI_JOB_ID}"
         git push -u origin master
 
 elif [ "$1" == "staging" ]; then
@@ -18,7 +18,7 @@ elif [ "$1" == "staging" ]; then
         git config --global user.email "gitlab-ci@test.com"
  	git config --global user.name "gitlab-ci"
         git tag "v${CI_JOB_ID}"
-        git commit -am "Updated content for staging - ${CI_JOB_ID}"
+        git commit -am "Updated content for staging ${CI_JOB_ID}"
         git push -u origin master 
         git push -u origin "v${CI_JOB_ID}"
 
