@@ -1,0 +1,22 @@
+image: docker:latest
+
+variables:
+  REPOSITORY_URL: 594648871345.dkr.ecr.ap-southeast-2.amazonaws.com/formio
+  GIT_SUBMODULE_STRATEGY: recursive
+
+services:
+- denissingh/isentia-build
+
+before_script:
+  - git submodule sync --recursive
+  - git submodule update --init --recursive
+
+stages:
+  - build
+
+build_dev:
+  stage: build
+  script:
+    - ./build.sh $ENV
+  only:
+    - schedules
